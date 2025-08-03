@@ -196,4 +196,4 @@ This project is open source and available under the [MIT License](LICENSE).
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - GitHub: [Your GitHub](https://github.com/yourusername)
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by Lucky
