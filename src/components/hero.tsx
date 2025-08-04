@@ -8,7 +8,7 @@ export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const texts = ["Site Reliability Engineer", "DevOps Engineer", "Cloud Automation Expert", "Infrastructure Specialist"];
+  const texts = ["Site Reliability Engineer", "DevOps Engineer"];
   const typingSpeed = isDeleting ? 50 : 100;
   const pauseTime = 2000;
 
