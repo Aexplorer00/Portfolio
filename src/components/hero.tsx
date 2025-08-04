@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import { ChevronDown, Github, Linkedin, Mail, Download } from "lucide-react";
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const texts = ["Site Reliability Engineer", "DevOps Engineer", "Cloud Automation Expert", "Infrastructure Specialist"];
+  const texts = ["Site Reliability Engineer", "DevOps Engineer"];
   const typingSpeed = isDeleting ? 50 : 100;
   const pauseTime = 2000;
 
@@ -103,6 +103,15 @@ export default function Hero() {
             className="inline-flex items-center px-8 py-3 text-lg font-medium text-primary-600 dark:text-primary-400 bg-white dark:bg-dark-800 border-2 border-primary-600 dark:border-primary-400 hover:bg-gradient-to-r hover:from-primary-50 hover:to-secondary-50 dark:hover:bg-dark-700 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             View My Work
+          </a>
+          <a
+            href="/resume.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-accent-600 to-green-600 hover:from-accent-700 hover:to-green-700 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            <Download size={20} className="mr-2" />
+            View Resume
           </a>
         </div>
 
