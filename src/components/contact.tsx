@@ -104,6 +104,37 @@ export default function Contact() {
               ))}
             </div>
 
+            {/* Resume Download Section */}
+            <div className="pt-8 border-t border-gray-200 dark:border-dark-700">
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+                Resume & CV
+              </h4>
+              <div className="space-y-3">
+                <a
+                  href="/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Download PDF Resume
+                </a>
+                <a
+                  href="/Portfolio/resume.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors text-sm ml-3"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  View Online Resume
+                </a>
+              </div>
+            </div>
+
             {/* Social Links */}
             <div className="pt-8">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
