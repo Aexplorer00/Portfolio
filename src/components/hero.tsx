@@ -105,7 +105,7 @@ export default function Hero() {
             View My Work
           </a>
           <a
-            href="/resume.html"
+            href="/Portfolio/resume.html"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-accent-600 to-green-600 hover:from-accent-700 hover:to-green-700 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
