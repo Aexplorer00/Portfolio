@@ -4,7 +4,24 @@ import { Download, ExternalLink } from "lucide-react";
 
 export default function ResumeSection() {
   const handleDownload = (url: string) => {
-    window.open(url, '_blank');
+    // Use absolute URLs for better reliability
+    const absoluteUrls: { [key: string]: string } = {
+      'pdf': 'https://aexplorer00.github.io/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf',
+      'html': 'https://aexplorer00.github.io/Portfolio/resume.html',
+      'github': 'https://raw.githubusercontent.com/Aexplorer00/Portfolio/main/public/Laxmi_Prasad_Dooda_DevOps_Resume.pdf'
+    };
+    
+    // Determine which URL to use
+    let targetUrl = url;
+    if (url.includes('Laxmi_Prasad_Dooda_DevOps_Resume.pdf')) {
+      targetUrl = absoluteUrls.pdf;
+    } else if (url.includes('resume.html')) {
+      targetUrl = absoluteUrls.html;
+    } else if (url.includes('raw.githubusercontent.com')) {
+      targetUrl = absoluteUrls.github;
+    }
+    
+    window.open(targetUrl, '_blank');
   };
 
   return (
