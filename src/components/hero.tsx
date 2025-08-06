@@ -39,6 +39,30 @@ export default function Hero() {
     return () => clearTimeout(timeout);
   }, [displayText, currentIndex, isDeleting, texts, typingSpeed]);
 
+  const handleResumeDownload = () => {
+    // Try multiple resume options
+    const resumeUrls = [
+      '/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf',
+      '/Portfolio/resume.html',
+      'https://raw.githubusercontent.com/Aexplorer00/Portfolio/main/public/Laxmi_Prasad_Dooda_DevOps_Resume.pdf'
+    ];
+    
+    // Try to open the first URL, if it fails, try the next one
+    let currentIndex = 0;
+    
+    const tryNext = () => {
+      if (currentIndex < resumeUrls.length) {
+        window.open(resumeUrls[currentIndex], '_blank');
+        currentIndex++;
+      } else {
+        // Fallback: redirect to contact section
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+    
+    tryNext();
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
@@ -104,15 +128,13 @@ export default function Hero() {
           >
             View My Work
           </a>
-          <a
-            href="/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handleResumeDownload}
             className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-accent-600 to-green-600 hover:from-accent-700 hover:to-green-700 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <Download size={20} className="mr-2" />
-            View Resume
-          </a>
+            Download Resume
+          </button>
         </div>
 
         {/* Social Links */}
