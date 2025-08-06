@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronDown, Github, Linkedin, Mail, Download } from "lucide-react";
+import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState("");
@@ -38,18 +38,6 @@ export default function Hero() {
 
     return () => clearTimeout(timeout);
   }, [displayText, currentIndex, isDeleting, texts, typingSpeed]);
-
-  const handleResumeDownload = () => {
-    // Use absolute URLs for better reliability
-    const resumeUrls = [
-      'https://aexplorer00.github.io/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf',
-      'https://aexplorer00.github.io/Portfolio/resume.html',
-      'https://raw.githubusercontent.com/Aexplorer00/Portfolio/main/public/Laxmi_Prasad_Dooda_DevOps_Resume.pdf'
-    ];
-    
-    // Try to open the first URL (PDF)
-    window.open(resumeUrls[0], '_blank');
-  };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -116,13 +104,12 @@ export default function Hero() {
           >
             View My Work
           </a>
-          <button
-            onClick={handleResumeDownload}
+          <a
+            href="#contact"
             className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-accent-600 to-green-600 hover:from-accent-700 hover:to-green-700 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <Download size={20} className="mr-2" />
-            Download Resume
-          </button>
+            Get Resume
+          </a>
         </div>
 
         {/* Social Links */}
