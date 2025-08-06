@@ -111,7 +111,7 @@ export default function Contact() {
               </h4>
               <div className="space-y-3">
                 <a
-                  href="/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf"
+                  href="https://aexplorer00.github.io/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm"
@@ -122,7 +122,7 @@ export default function Contact() {
                   Download PDF Resume
                 </a>
                 <a
-                  href="/Portfolio/resume.html"
+                  href="https://aexplorer00.github.io/Portfolio/resume.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors text-sm ml-3"
