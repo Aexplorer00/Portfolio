@@ -42,7 +42,7 @@ export default function Skills() {
             Skills & Expertise
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600 mx-auto mb-8 rounded-full"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-justify">
             Technologies and tools I use to bring ideas to life
           </p>
         </div>

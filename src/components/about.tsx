@@ -34,7 +34,7 @@ export default function About() {
             About Me
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-justify">
             Site Reliability / DevOps Engineer passionate about automating infrastructure and ensuring system reliability.
           </p>
         </div>
@@ -52,12 +52,12 @@ export default function About() {
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
               Automating Infrastructure at Scale
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed text-justify">
               I&apos;m a Site Reliability / DevOps Engineer with 3.5 years of experience at Tata Consultancy Services (TCS), 
               specializing in AWS infrastructure automation, CI/CD pipeline optimization, and containerized application deployment. 
               I excel at reducing MTTR through proactive monitoring and automation.
             </p>
-            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed text-justify">
               My expertise spans across Terraform infrastructure provisioning, Kubernetes orchestration, 
               and building robust monitoring solutions. I&apos;m passionate about GitOps methodologies and 
               ensuring system reliability through observability and incident management.
@@ -88,7 +88,7 @@ export default function About() {
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 {feature.title}
               </h4>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 dark:text-gray-400 text-justify">
                 {feature.description}
               </p>
             </div>

@@ -84,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-up">
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-up text-justify">
           Site Reliability / DevOps Engineer with 3.5 years of experience automating infrastructure, 
           implementing CI/CD, and deploying scalable applications on AWS. Passionate about GitOps, 
           cloud automation, and ensuring system reliability.
@@ -104,12 +104,6 @@ export default function Hero() {
           >
             View My Work
           </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-gradient-to-r from-accent-600 to-green-600 hover:from-accent-700 hover:to-green-700 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            Get Resume
-          </a>
         </div>
 
         {/* Social Links */}
@@ -124,7 +118,7 @@ export default function Hero() {
             <Github size={24} />
           </a>
           <a
-            href="https://linkedin.com/in/laxmi-prasad-d"
+            href="https://www.linkedin.com/in/laxmi-prasad-d/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors transform hover:scale-110"

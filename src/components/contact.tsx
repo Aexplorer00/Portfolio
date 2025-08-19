@@ -63,7 +63,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-justify">
             Have a project in mind or just want to chat? I&apos;d love to hear from you. 
             Let&apos;s create something amazing together!
           </p>
@@ -76,7 +76,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Let&apos;s Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed text-justify">
                 I&apos;m always open to discussing new opportunities, creative ideas, 
                 or potential collaborations. Feel free to reach out through any of 
                 the channels below.
@@ -104,37 +104,6 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Resume Download Section */}
-            <div className="pt-8 border-t border-gray-200 dark:border-dark-700">
-              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
-                Resume & CV
-              </h4>
-              <div className="space-y-3">
-                <a
-                  href="https://aexplorer00.github.io/Portfolio/Laxmi_Prasad_Dooda_DevOps_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm"
-                >
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                  Download PDF Resume
-                </a>
-                <a
-                  href="https://aexplorer00.github.io/Portfolio/resume.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors text-sm ml-3"
-                >
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                  View Online Resume
-                </a>
-              </div>
-            </div>
-
             {/* Social Links */}
             <div className="pt-8">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
@@ -153,7 +122,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a
-                  href="https://linkedin.com/in/laxmi-prasad-d"
+                  href="https://www.linkedin.com/in/laxmi-prasad-d/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-100 dark:bg-dark-800 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400 rounded-lg flex items-center justify-center transition-all"

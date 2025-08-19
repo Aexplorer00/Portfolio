@@ -83,27 +83,31 @@ export default function ProjectsSection() {
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600 mx-auto mb-8 rounded-full"></div>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-justify">
             Here are some of my recent projects that showcase my skills and experience in DevOps, Cloud Engineering, and Site Reliability
           </p>
         </div>
 
         {/* Featured Projects */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="space-y-8 mb-16">
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-dark-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              className={`grid lg:grid-cols-2 gap-8 items-center ${
+                index % 2 === 1 ? 'lg:grid-flow-dense' : ''
+              }`}
             >
               {/* Project Image/Icon */}
-              <div className="h-48 bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 flex items-center justify-center text-white text-6xl shadow-inner">
-                {project.image}
+              <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                <div className="h-80 bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 rounded-xl flex items-center justify-center text-white text-8xl shadow-2xl">
+                  {project.image}
+                </div>
               </div>
               
               {/* Project Content */}
-              <div className="p-6">
+              <div className={`p-6 ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
                     {project.title}
                   </h3>
                   <span className="px-3 py-1 bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 rounded-full text-sm font-medium">
@@ -111,13 +115,13 @@ export default function ProjectsSection() {
                   </span>
                 </div>
                 
-                <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed text-justify text-lg">
                   {project.description}
                 </p>
                 
                 {/* Impact Badge */}
                 <div className="mb-4">
-                  <span className="inline-flex items-center px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">
+                  <span className="inline-flex items-center px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-base font-medium">
                     🚀 {project.impact}
                   </span>
                 </div>
@@ -140,18 +144,18 @@ export default function ProjectsSection() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white rounded-lg transition-all duration-300 transform hover:shadow-lg"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white rounded-lg transition-all duration-300 transform hover:shadow-lg"
                   >
-                    <ExternalLink size={16} className="mr-2" />
+                    <ExternalLink size={18} className="mr-2" />
                     View Project
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-gray-200 dark:bg-dark-700 hover:bg-gray-300 dark:hover:bg-dark-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors"
+                    className="inline-flex items-center px-6 py-3 bg-gray-200 dark:bg-dark-700 hover:bg-gray-300 dark:hover:bg-dark-600 text-gray-700 dark:text-gray-300 rounded-lg transition-colors"
                   >
-                    <Github size={16} className="mr-2" />
+                    <Github size={18} className="mr-2" />
                     Source Code
                   </a>
                 </div>
@@ -182,7 +186,7 @@ export default function ProjectsSection() {
                   </span>
                 </div>
                 
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 leading-relaxed text-justify">
                   {project.description}
                 </p>
                 
