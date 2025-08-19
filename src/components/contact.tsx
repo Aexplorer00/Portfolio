@@ -122,7 +122,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/laxmi-prasad-d/"
+                  href="https://www.linkedin.com/in/laxmi-prasad-d-741042202/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-100 dark:bg-dark-800 text-gray-600 dark:text-gray-400 hover:bg-primary-100 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400 rounded-lg flex items-center justify-center transition-all"

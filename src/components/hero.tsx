@@ -118,7 +118,7 @@ export default function Hero() {
             <Github size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/laxmi-prasad-d/"
+            href="https://www.linkedin.com/in/laxmi-prasad-d-741042202/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors transform hover:scale-110"
