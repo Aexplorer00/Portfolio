@@ -14,12 +14,12 @@ export default function Hero() {
 
   useEffect(() => {
     const currentText = texts[currentIndex];
-    
+
     if (!isDeleting && displayText === currentText) {
       setTimeout(() => setIsDeleting(true), pauseTime);
       return;
     }
-    
+
     if (isDeleting && displayText === "") {
       setIsDeleting(false);
       setCurrentIndex((prev) => (prev + 1) % texts.length);
@@ -43,7 +43,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50 dark:from-dark-900 dark:via-dark-800 dark:to-dark-900"></div>
-      
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-primary-400/30 to-secondary-400/30 rounded-full blur-3xl animate-pulse"></div>
@@ -85,8 +85,8 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-up text-justify">
-          Site Reliability / DevOps Engineer with 3.5 years of experience automating infrastructure, 
-          implementing CI/CD, and deploying scalable applications on AWS. Passionate about GitOps, 
+          Site Reliability / DevOps Engineer with 4 years of experience automating infrastructure,
+          implementing CI/CD, and deploying scalable applications on AWS. Passionate about GitOps,
           cloud automation, and ensuring system reliability.
         </p>
 

@@ -53,13 +53,13 @@ export default function About() {
               Automating Infrastructure at Scale
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed text-justify">
-              I&apos;m a Site Reliability / DevOps Engineer with 3.5 years of experience at Tata Consultancy Services (TCS), 
-              specializing in AWS infrastructure automation, CI/CD pipeline optimization, and containerized application deployment. 
+              I&apos;m a Site Reliability / DevOps Engineer with 4 years of experience at Tata Consultancy Services (TCS),
+              specializing in AWS infrastructure automation, CI/CD pipeline optimization, and containerized application deployment.
               I excel at reducing MTTR through proactive monitoring and automation.
             </p>
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed text-justify">
-              My expertise spans across Terraform infrastructure provisioning, Kubernetes orchestration, 
-              and building robust monitoring solutions. I&apos;m passionate about GitOps methodologies and 
+              My expertise spans across Terraform infrastructure provisioning, Kubernetes orchestration,
+              and building robust monitoring solutions. I&apos;m passionate about GitOps methodologies and
               ensuring system reliability through observability and incident management.
             </p>
             <div className="flex flex-wrap gap-3 pt-4">
