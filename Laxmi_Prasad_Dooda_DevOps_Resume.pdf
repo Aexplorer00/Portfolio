@@ -1,0 +1,36 @@
+# Laxmi Prasad Dooda - DevOps & Cloud Engineer Resume
+
+This is a placeholder for the actual resume PDF. 
+
+**Contact Information:**
+- Email: doodalakshmiprasad@gmail.com
+- LinkedIn: https://linkedin.com/in/laxmi-prasad-d
+- GitHub: https://github.com/Aexplorer00
+
+**Professional Summary:**
+Site Reliability / DevOps Engineer with 3.5 years of experience at Tata Consultancy Services (TCS). Specialized in automating infrastructure, implementing CI/CD pipelines, and deploying scalable applications on AWS cloud platform.
+
+**Key Skills:**
+- Cloud Platforms: AWS (EC2, S3, RDS, CloudWatch, Route 53)
+- Infrastructure as Code: Terraform, CloudFormation
+- CI/CD: GitHub Actions, GitLab CI/CD, AWS CodePipeline
+- Containerization: Docker, Kubernetes, Amazon EKS
+- Monitoring: CloudWatch, Dynatrace, Prometheus, Grafana
+- Programming: Python, Bash, YAML
+- DevOps Tools: ArgoCD, Helm, Git
+
+**Professional Experience:**
+DevOps Engineer | Tata Consultancy Services (TCS) | 2021 - Present
+- Automated infrastructure deployment using Terraform for 15+ production applications
+- Implemented multi-region deployment strategies achieving 99.9% uptime
+- Optimized CI/CD pipelines reducing deployment time by 87%
+- Enhanced monitoring and observability reducing MTTR by 82%
+
+**Education:**
+[Your degree and university information]
+
+**Certifications:**
+[Your relevant certifications]
+
+---
+Note: Please replace this placeholder file with your actual resume PDF.
