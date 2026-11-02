@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Laxmi Prasad Dooda | DevOps & Cloud Engineer Portfolio",
-  description: "Site Reliability / DevOps Engineer with 4 years of experience in AWS, Terraform, CI/CD automation, and cloud infrastructure management",
+  title: "Laxmi Prasad Dooda — Site Reliability & DevOps Engineer",
+  description: "Site Reliability and DevOps engineering focused on AWS, Terraform, Kubernetes, CI/CD, automation and observability. Explore real-world engineering projects.",
   keywords: ["portfolio", "devops", "aws", "terraform", "site reliability engineer", "kubernetes", "docker", "cloud engineer", "laxmi prasad dooda"],
   authors: [{ name: "Laxmi Prasad Dooda" }],
   robots: { index: true, follow: true },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Laxmi Prasad Dooda | DevOps & Cloud Engineer Portfolio",
-    description: "DevOps Engineer specializing in AWS, Terraform, and CI/CD automation",
+    description: "SRE / DevOps Engineer building repeatable infrastructure and reliable delivery systems.",
   },
 };
 
