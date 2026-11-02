@@ -16,8 +16,8 @@ export default function Hero() {
     const currentText = texts[currentIndex];
 
     if (!isDeleting && displayText === currentText) {
-      setTimeout(() => setIsDeleting(true), pauseTime);
-      return;
+      const timeout = setTimeout(() => setIsDeleting(true), pauseTime);
+      return () => clearTimeout(timeout);
     }
 
     if (isDeleting && displayText === "") {
@@ -37,7 +37,7 @@ export default function Hero() {
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [displayText, currentIndex, isDeleting, texts, typingSpeed]);
+  }, [displayText, currentIndex, isDeleting, typingSpeed]);
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -46,7 +46,7 @@ export default function Hero() {
 
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-primary-400/30 to-secondary-400/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-primary-400/30 to-secondary-400/30 rounded-full blur-3xl motion-safe:animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-accent-400/30 to-primary-400/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-secondary-300/20 to-accent-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "4s" }}></div>
       </div>
@@ -54,7 +54,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Profile Image */}
         <div className="mb-8 relative">
-          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 p-1 animate-bounce-gentle shadow-2xl">
+          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 p-1 motion-safe:animate-bounce-gentle shadow-2xl">
             <div className="w-full h-full rounded-full bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center text-7xl overflow-hidden shadow-inner">
               <span className="select-none" style={{ lineHeight: '1' }}>👨‍💻</span>
             </div>
@@ -62,7 +62,7 @@ export default function Hero() {
         </div>
 
         {/* Greeting */}
-        <div className="mb-6 animate-fade-in">
+        <div className="mb-6 motion-safe:animate-fade-in">
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-2">
             Hello, I&apos;m
           </p>
@@ -84,11 +84,13 @@ export default function Hero() {
         </div>
 
         {/* Description */}
-        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-up text-justify">
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto motion-safe:animate-slide-up text-center leading-relaxed">
           Site Reliability / DevOps Engineer with 4 years of experience automating infrastructure,
           implementing CI/CD, and deploying scalable applications on AWS. Passionate about GitOps,
           cloud automation, and ensuring system reliability.
         </p>
+
+        <p className="mb-8 text-sm font-medium tracking-wide text-primary-700 dark:text-primary-300">AWS · Kubernetes · Terraform · CI/CD · Observability</p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up">
@@ -136,7 +138,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 motion-safe:animate-bounce">
           <a
             href="#about"
             className="flex flex-col items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
