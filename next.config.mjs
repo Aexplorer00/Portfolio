@@ -1,14 +1,4 @@
+const isPages = process.env.GITHUB_PAGES === 'true';
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-
-const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  basePath: isProd ? '/Portfolio' : '',
-  assetPrefix: isProd ? '/Portfolio/' : '',
-  images: {
-    unoptimized: true,
-  },
-};
-
+const nextConfig = { output: 'export', images: { unoptimized: true }, trailingSlash: true, ...(isPages ? { basePath: '/Portfolio', assetPrefix: '/Portfolio/' } : {}) };
 export default nextConfig;

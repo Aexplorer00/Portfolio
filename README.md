@@ -1,199 +1,58 @@
-# Modern Portfolio Website
+# Mission Control — SRE / Platform / AI Systems Portfolio
 
-A dynamic, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS featuring rich animations, dark mode support, and modern UI components.
+A modular Next.js 14 + TypeScript + Tailwind + Framer Motion personal portfolio. Obsidian dark palette, emerald/cyber/violet accents, responsive architecture lab cards, deterministic resilience simulations, simulated live telemetry and terminal, case-study dialogs, and skills matrix.
 
-## ✨ Features
+## Running locally
 
-- **🎨 Modern UI Design**: Clean, professional design with beautiful animations
-- **🌙 Dark/Light Mode**: Toggle between themes with smooth transitions
-- **📱 Fully Responsive**: Optimized for all devices and screen sizes
-- **⚡ Fast Performance**: Built with Next.js for optimal loading speeds
-- **🎯 Interactive Elements**: Smooth scrolling, hover effects, and animations
-- **📧 Contact Form**: Functional contact form with validation
-- **🔧 TypeScript**: Fully typed for better development experience
-- **🎨 Tailwind CSS**: Utility-first CSS framework for rapid styling
-
-## 🚀 Components
-
-### Hero Section
-- Animated typing effect
-- Gradient backgrounds
-- Social links
-- Call-to-action buttons
-
-### About Section
-- Personal information
-- Skills overview
-- Feature highlights
-- Technology stack
-
-### Skills Section
-- Skill categories with progress bars
-- Interactive animations
-- Experience metrics
-
-### Projects Section
-- Featured projects showcase
-- Project cards with technologies
-- Live demo and source code links
-- Responsive grid layout
-
-### Contact Section
-- Contact form with validation
-- Contact information
-- Social media links
-- Success/error messaging
-
-## 🛠️ Technologies Used
-
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS, CSS Modules
-- **Icons**: Lucide React
-- **Animations**: Framer Motion (optional)
-- **Development**: ESLint, PostCSS, Autoprefixer
-
-## 📦 Installation & Setup
-
-### Prerequisites
-- Node.js 18+ and npm/yarn/pnpm
-- Git
-
-### Installation Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   ```
-
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## 🎨 Customization
-
-### Personal Information
-1. Update personal details in:
-   - `src/components/hero.tsx` - Name, title, description
-   - `src/components/about.tsx` - About section content
-   - `src/components/contact.tsx` - Contact information
-
-### Projects
-1. Edit project data in `src/components/projects.tsx`:
-   - Add your real projects
-   - Update project descriptions
-   - Add live demo and GitHub links
-   - Replace placeholder emojis with actual project images
-
-### Skills
-1. Modify skill categories and levels in `src/components/skills.tsx`:
-   - Update skill names and proficiency levels
-   - Add or remove skill categories
-   - Adjust progress bar values
-
-### Styling
-1. Customize colors in `tailwind.config.ts`:
-   - Primary color scheme
-   - Dark mode colors
-   - Custom animations
-
-### Contact Form
-1. Integrate with email service (e.g., EmailJS, Netlify Forms):
-   - Update form submission logic in `src/components/contact.tsx`
-   - Add your email service configuration
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
-
-### Netlify
-1. Build the project: `npm run build`
-2. Deploy the `out` folder to Netlify
-
-### Manual Deployment
-1. Build for production: `npm run build`
-2. Start production server: `npm start`
-
-## 📁 Project Structure
-
-```
-portfolio/
-├── src/
-│   ├── app/
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   └── components/
-│       ├── about.tsx
-│       ├── contact.tsx
-│       ├── hero.tsx
-│       ├── navigation.tsx
-│       ├── projects.tsx
-│       ├── skills.tsx
-│       └── theme-provider.tsx
-├── public/
-├── .github/
-│   └── copilot-instructions.md
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── README.md
+```bash
+npm install
+npm run dev
+npm run typecheck
+npm run build
 ```
 
-## 🎯 Performance
+### GitHub Pages
 
-- **Lighthouse Score**: 95+ on all metrics
-- **Core Web Vitals**: Optimized for excellent user experience
-- **SEO Friendly**: Meta tags and semantic HTML
-- **Accessibility**: ARIA labels and keyboard navigation
+`GITHUB_PAGES=true npm run build` exports into `out/` with `/Portfolio/` base path. Upload `out/` to Pages using a workflow or publishing action. For a different repository name, change `basePath` and `assetPrefix` in `next.config.mjs` and the resume URL in `Hero.tsx`.
 
-## 🤝 Contributing
+The existing resume in the upstream repo was not included in this standalone download. Put your valid PDF at `public/Laxmi_Prasad_Dooda_DevOps_Resume.pdf`, or update the resume CTA. On a local `/`-hosted deployment, also change the CTA path to `/Laxmi_Prasad_Dooda_DevOps_Resume.pdf`.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Content and integrity
 
-## 📄 License
+- The status strip, terminal and interactive patterns are clearly labeled **simulations**. They do **not** access an actual Kubernetes cluster, AI model, PagerDuty, or AWS account.
+- Project descriptions and specific performance assertions were provided in the brief; they are **not independently verified**. Project cards mark claims or design objectives. Replace with measured results and evidence when available.
+- GitHub links lead to the public profile until individual verified project repositories are provided.
+- R&D priorities are described as research rather than earned certifications or production accomplishments.
+- The modal supports Escape and backdrop close; for stricter accessibility audits, consider adding a focus trap and focus restoration.
+- The UI does not collect personal data and makes no outbound API calls.
 
-This project is open source and available under the [MIT License](LICENSE).
+## Structure
 
-## 🙏 Acknowledgments
+- `src/components/Hero.tsx` — rotating roles, terminal feed, CTAs
+- `src/components/MetricsWidget.tsx` — simulation status bar
+- `src/components/Projects.tsx` — category filters + case-study cards
+- `src/components/ArchitectureModal.tsx` — accessible diagram details
+- `src/components/SkillsMatrix.tsx` — tabbed tooling domain explorer
+- `src/components/ResiliencePlayground.tsx` — five deterministic LLD patterns
+- `src/components/TerminalDrawer.tsx` — browser-only command interpreter
+- `src/components/MissionControl.tsx` — assembly, roadmap, navigation, contact
+- `src/data/content.ts` — editable skills, project data, links
 
-- Design inspiration from modern portfolio websites
-- Icons by [Lucide](https://lucide.dev/)
-- Built with [Next.js](https://nextjs.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
+## Deployment checklist
 
----
+1. Add the real resume PDF and check the link.
+2. Verify project implementations, screenshots, metrics and repository links.
+3. Run `npm install`, `npm run typecheck`, `npm run build`.
+4. Audit mobile breakpoints, screen readers and keyboard focus.
+5. Deploy the static export and verify all internal anchor links.
 
-⭐ If you found this portfolio template helpful, please give it a star!
+## Production experience vs engineering projects
+The homepage features five owner-supplied enterprise case studies, including stated engineering ownership and measurement methods. These are distinct from the engineering projects and exploratory AI/MLOps R&D. Case-study architectures are deliberately sanitized and conceptual. Reported metrics are attributed to the engineer's professional experience, not to live connected telemetry.
 
-## 📧 Contact
+## Personalization review before publishing
 
-- Email: doodalakshmiprasad@gmail.com
-- LinkedIn: https://www.linkedin.com/in/laxmi-prasad-d-741042202/
-- GitHub: https://github.com/Aexplorer00
+The hero and navigation now prominently use **Laxmi Prasad Dooda**, with an added career story and measured-outcome highlights. The featured experience is based on the enterprise case studies provided by the portfolio owner. The AI systems work is presented separately as active R&D.
 
-Built with ❤️ by Lucky
+**Résumé:** This ZIP does not contain a verified, up-to-date résumé. The hero currently opens the résumé file in the existing GitHub repository for review. Before publishing, replace this with your latest approved PDF under `public/` and update the link to point to the deployed base path. Never publish confidential client details.
+
+**Build/browser validation:** Run `npm install`, `npm run build`, then check keyboard navigation, responsive behavior, PDF link and case-study interactions in a browser.
