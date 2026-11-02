@@ -7,9 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Laxmi Prasad Dooda | DevOps & Cloud Engineer Portfolio",
-  description: "Site Reliability / DevOps Engineer with 3.5 years of experience in AWS, Terraform, CI/CD automation, and cloud infrastructure management",
+  description: "Site Reliability / DevOps Engineer with 4 years of experience in AWS, Terraform, CI/CD automation, and cloud infrastructure management",
   keywords: ["portfolio", "devops", "aws", "terraform", "site reliability engineer", "kubernetes", "docker", "cloud engineer", "laxmi prasad dooda"],
   authors: [{ name: "Laxmi Prasad Dooda" }],
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Laxmi Prasad Dooda | DevOps & Cloud Engineer Portfolio",
     description: "Site Reliability / DevOps Engineer with 3.5 years of experience in AWS, Terraform, CI/CD automation, and cloud infrastructure management",
